@@ -56,13 +56,13 @@ class UrlsTest extends ApiTestCase
     public function testDeleteUrl(): void
     {
         $client = static::createClient();
-        $iri = $this->findIriBy(Url::class, ['path' => 'uihrdife']);
+        $iri = $this->findIriBy(Url::class, ['path' => 'bljkbkjt']);
 
         $client->request('DELETE', $iri);
 
         $this->assertResponseStatusCodeSame(204);
         $this->assertNull(
-            $this->getContainer()->get('doctrine')->getRepository(Url::class)->findOneBy(['path' => 'uihrdife'])
+            $this->getContainer()->get('doctrine')->getRepository(Url::class)->findOneBy(['path' => 'bljkbkjt'])
         );
     }
 }
