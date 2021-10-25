@@ -1,0 +1,7 @@
+App\Entity\Url:
+  url_{1..10}:
+    originalUrl: <domainName()>
+    path: <lexify(????????)>
+    redirectsCount: <numberBetween(1, 200)>
+    createdAt: <dateTime()>
+    updatedAt: <dateTime()>
